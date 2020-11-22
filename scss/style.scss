@@ -1,0 +1,34 @@
+@use 'modules';
+
+/*header section - layout done, design needs to be changed*/  
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: modules.$nav-background-color;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  
+  img {
+    width: 53px;
+    position: fixed;
+    top: 50px;
+    left: 3%;
+    transform: translate(-50%, -50%);
+  }
+  
+  p {
+    width: auto;
+    height: 40px;
+    color: modules.$nav-color;
+    font-size: 28px;
+    position: fixed;
+    top: 50px;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }  
+}
+
+/*end of header*/
