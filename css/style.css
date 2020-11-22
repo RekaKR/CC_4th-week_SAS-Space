@@ -4,60 +4,97 @@
 }
 
 /*header section - layout done, design needs to be changed*/
-nav {
+.nav {
   width: 100%;
   height: 100px;
   background-color: black;
-  box-shadow: 0 0 0.7rem grey;
+  box-shadow: 0 0 0.7rem #aaa;
   display: flex;
   position: fixed;
-  top: 0;
   z-index: 1;
+  color: white;
 }
-nav img {
+.nav .pic {
+  top: 0;
+}
+.nav .pic img {
   width: 53px;
   position: fixed;
-  top: 50px;
+  top: 52px;
   left: 3%;
   transform: translate(-50%, -50%);
 }
-nav p {
-  width: auto;
-  height: 40px;
-  color: white;
-  font-size: 28px;
-  position: fixed;
-  top: 50px;
-  right: 3%;
-  transform: translate(-50%, -50%);
+.nav .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.nav .hamburger-checkbox {
+  display: none;
+}
+.nav .hamburger-checkbox:checked + .list {
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-end;
+}
+.nav .hamburger-label {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   cursor: pointer;
+}
+.nav .hamburger-line {
+  width: 1.5rem;
+  height: 2px;
+  background-color: white;
+  display: block;
+}
+.nav .list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+}
+.nav .list .item {
+  text-align: center;
+}
+.nav .list .link {
+  color: white;
+  padding: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+  display: block;
+}
+.nav .list .link:hover {
+  color: white;
+  background-color: white;
 }
 
 /*end of header*/
 main {
-  height: 650px;
+  width: 100%;
+  height: 100vh;
+  color: white;
   background-color: black;
+  padding-top: 150px;
+  display: flex;
 }
 
 /*footer section - layout done, design needs to be changed*/
 footer {
   width: 100%;
-  height: 150px;
   background-color: black;
-  font-size: 20px;
-  box-shadow: 0 0 0.7rem grey;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px 40px;
+  font-size: 14px;
+  box-shadow: 0 0 0.7rem #aaa;
   position: relative;
   bottom: 0;
   justify-items: center;
-}
-footer div {
-  display: flex;
-}
-footer .top-row {
-  padding: 16px;
 }
 footer a, footer p {
   margin: 0 8px;
@@ -67,10 +104,6 @@ footer a, footer p {
 footer a:visited, footer p:visited {
   color: white;
   background-color: transparent;
-}
-footer .bottom-row {
-  padding: 16px;
-  font-size: 12px;
 }
 
 /*end of footer*/

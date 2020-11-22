@@ -1,81 +1,126 @@
 @use 'modules';
 
 /*header section - layout done, design needs to be changed*/  
-nav {
+
+.nav {
   width: 100%;
   height: 100px;
   background-color: modules.$side-background-color;
-  box-shadow: 0 0 0.7rem modules.$nav-shadow;
+  box-shadow: 0 0 0.7rem modules.$shadow;
   display: flex;
   position: fixed;
-  top: 0;
   z-index: 1;
-  
-  img {
-    width: 53px;
-    position: fixed;
-    top: 50px;
-    left: 3%;
-    transform: translate(-50%, -50%);
+  color: modules.$text-color;
+
+  & .pic {
+    top: 0;
+
+    img {
+      width: 53px;
+      position: fixed;
+      top: 52px;
+      left: 3%;
+      transform: translate(-50%, -50%);
+    }
   }
+
+  & .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  & .hamburger {
+    &-checkbox {
+      display: none;
   
-  p {
-    width: auto;
-    height: 40px;
-    color: modules.$nav-color;
-    font-size: 28px;
-    position: fixed;
-    top: 50px;
-    right: 3%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }  
+      &:checked + .list {
+        display: flex;
+        margin-top: 50px;
+        align-items: flex-end;
+
+      }
+    }
+  
+    &-label {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.75rem;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+  
+    &-line {
+      width: 1.5rem;
+      height: 2px;
+      background-color: modules.$text-color;
+      display: block;
+    }
+  }    
+
+
+  & .list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+
+    & .item {
+      text-align: center;
+    }
+  
+    & .link {
+      color: modules.$text-color;
+      padding: 1rem;
+      line-height: 1rem;
+      text-decoration: none;
+      display: block;
+  
+      &:hover {
+        color: modules.$text-color;
+        background-color: modules.$text-color;
+      }
+    }
+  } 
 }
 /*end of header*/
 
 
 main {
-  height: 650px;
+  width: 100%;
+  height: 100vh;
+  color: modules.$text-color;
   background-color: modules.$side-background-color;
+  padding-top: 150px;
+  display: flex;
+
 }
 
 
 /*footer section - layout done, design needs to be changed*/
 footer {
   width: 100%;
-  height: 150px;
   background-color: modules.$side-background-color;
-  font-size: 20px;
-  box-shadow: 0 0 0.7rem modules.$nav-shadow;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px 40px;
+  font-size: 14px;
+  box-shadow: 0 0 0.7rem modules.$shadow;
   position: relative;
   bottom: 0;
   justify-items: center;
 
-  div {
-    display: flex;
-  }
-
-  .top-row {
-    padding: 16px;
-  }  
-
   a, p {
     margin: 0 8px;
-    color: modules.$nav-color;
+    color: modules.$text-color;
     text-decoration: none;
 
     &:visited {
-      color: modules.$nav-color;
+      color: modules.$text-color;
       background-color: transparent;
     }    
-  }
-   
-  .bottom-row {
-    padding: 16px;
-    font-size: 12px;
   }
 }
 /*end of footer*/

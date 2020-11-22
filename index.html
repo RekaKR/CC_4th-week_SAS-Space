@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +8,58 @@
 </head>
 
 <body>
-  <nav>
-    <a href="../index.html">
-      <img src="https://cdn.pixabay.com/photo/2017/02/23/13/34/earth-2092185_960_720.png"
-        alt="Planet earth.">
-    </a>
-    <p>Regisztráció</p>
+  <nav class="nav">
+    <div class="pic">
+      <a href="../index.html">
+        <img src="https://cdn.pixabay.com/photo/2017/02/23/13/34/earth-2092185_960_720.png" alt="Planet earth.">
+      </a>
+    </div>
+    <div class="container">
+      <label class="hamburger-label" for="menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <input class="hamburger-checkbox" type="checkbox" id="menu">
+      <ul class="list">
+        <li class="item">
+          <a class="link" href="">Home</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">About</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">Content</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <main>
-
+    <p>WELCOME MESSAGE</p>
   </main>
 
- <footer>
-    <div class="top-row">
-      <a target="_blank" href="http://facebook.com/" class="fb">Facebook</a>
-      <p>|</p>
-      <a target="_blank" href="http://twitter.com/" class="tw">Twitter</a>
-      <p>|</p>
-      <a target="_blank" href="https://mail.google.com/">Email</a>
-      <p>|</p>
-      <a href="url">Navigáció</a>
-    </div>
-    <div class="bottom-row">
-      <p>Copyright © 2020 Réka Kupsza | Minden jog fenntartva.</p>
-    </div>
+  <footer>
+    <a target="_blank" href="http://facebook.com/" class="fb">PHONE</a>
+    <p>|</p>
+    <!--  ICON FOR EMAIL  -->
+    <a target="_blank" href="http://twitter.com/" class="tw">EMAL</a>
+    <!--  ICON FOR PHONE  -->
+    <p>Copyright © 2020 SPACE STUFF | All rights reserved.</p>
+    <!--  RENDES SZÖVEGET ÍRNI  -->
   </footer>
 
 </body>
+
 </html>
 
 <!--
-
-Navigation bar
-side bar menu button: is clickable but not a link.
-burger icon in the top right corner of the window
-cursor change to pointer above the burger icon and if the icon is clicked we don't get to another page
-
 Content
-contains a welcome message.
 The program's name is highlighted from the other content
 The word Space is also highlighted from the program's name
 All the content is placed on the center of the page
-There is a background of the page
-
 
 Footer
-contains the copyright: the cr section is presented on the bottom of the page
-2 icons for email and phone: placed on the bottom of the page and they change color when hovered
+copyright: the cr section is presented on the bottom of the page
+icons: placed on the bottom of the page and they change color when hovered
 -->
