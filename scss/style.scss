@@ -2,7 +2,7 @@
 
 /*header section - layout done, design needs to be changed*/  
 
-.nav {
+nav {
   width: 100%;
   height: 100px;
   background-color: modules.$side-background-color;
@@ -39,7 +39,6 @@
         display: flex;
         margin-top: 50px;
         align-items: flex-end;
-
       }
     }
   
@@ -98,18 +97,19 @@ main {
   background-color: modules.$side-background-color;
   padding-top: 150px;
   display: flex;
-
 }
 
 
 /*footer section - layout done, design needs to be changed*/
 footer {
   width: 100%;
+  height: 40px;
   background-color: modules.$side-background-color;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0 0 0.7rem modules.$shadow;
   position: relative;
   bottom: 0;
+  display: flex;
   justify-items: center;
 
   a, p {

@@ -4,7 +4,7 @@
 }
 
 /*header section - layout done, design needs to be changed*/
-.nav {
+nav {
   width: 100%;
   height: 100px;
   background-color: black;
@@ -14,31 +14,31 @@
   z-index: 1;
   color: white;
 }
-.nav .pic {
+nav .pic {
   top: 0;
 }
-.nav .pic img {
+nav .pic img {
   width: 53px;
   position: fixed;
   top: 52px;
   left: 3%;
   transform: translate(-50%, -50%);
 }
-.nav .container {
+nav .container {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
-.nav .hamburger-checkbox {
+nav .hamburger-checkbox {
   display: none;
 }
-.nav .hamburger-checkbox:checked + .list {
+nav .hamburger-checkbox:checked + .list {
   display: flex;
   margin-top: 50px;
   align-items: flex-end;
 }
-.nav .hamburger-label {
+nav .hamburger-label {
   width: 1.5rem;
   height: 1.5rem;
   padding: 0.75rem;
@@ -47,13 +47,13 @@
   flex-wrap: wrap;
   cursor: pointer;
 }
-.nav .hamburger-line {
+nav .hamburger-line {
   width: 1.5rem;
   height: 2px;
   background-color: white;
   display: block;
 }
-.nav .list {
+nav .list {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -61,17 +61,17 @@
   display: none;
   flex-direction: column;
 }
-.nav .list .item {
+nav .list .item {
   text-align: center;
 }
-.nav .list .link {
+nav .list .link {
   color: white;
   padding: 1rem;
   line-height: 1rem;
   text-decoration: none;
   display: block;
 }
-.nav .list .link:hover {
+nav .list .link:hover {
   color: white;
   background-color: white;
 }
@@ -89,11 +89,13 @@ main {
 /*footer section - layout done, design needs to be changed*/
 footer {
   width: 100%;
+  height: 40px;
   background-color: black;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0 0 0.7rem #aaa;
   position: relative;
   bottom: 0;
+  display: flex;
   justify-items: center;
 }
 footer a, footer p {
