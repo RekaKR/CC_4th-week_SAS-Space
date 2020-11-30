@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*header section - layout done, design needs to be changed*/
@@ -29,9 +30,6 @@ nav .container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-}
-nav .hamburger-checkbox {
-  display: none;
 }
 nav .hamburger-checkbox:checked + .list {
   display: flex;
@@ -109,5 +107,8 @@ footer a:visited, footer p:visited {
 }
 
 /*end of footer*/
+p {
+  color: #094c72;
+}
 
 /*# sourceMappingURL=style.css.map */
