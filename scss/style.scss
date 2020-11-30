@@ -54,11 +54,24 @@ nav {
   
     &-checkbox {
       display: none;
-  
+        
       &:checked + .list {
+        margin-top: 50%;
         display: flex;
-        margin-top: 50px;
-        align-items: flex-end;
+
+        a {
+          display: block;
+        }
+       
+        &::before {
+          content: "";
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.6);
+          position: fixed;
+          top: 0;
+          left: 0;
+        }
       }
     }
   }
@@ -70,22 +83,26 @@ nav {
     list-style: none;
     display: none;
     flex-direction: column;
+    z-index: 5;
 
     .item {
       text-align: center;
+      z-index: 5;
     }
   
     .link {
       color: modules.$text-color;
-      padding: 1rem;
-      line-height: 1rem;
+      padding: 2rem;
+      line-height: 0.5rem;
       text-decoration: none;
       display: block;
-  
+      z-index: 5;
+        
+      /*
       &:hover {
         color: modules.$text-color;
         background-color: modules.$text-color;
-      }
+      }*/
     }
   } 
 }
@@ -113,7 +130,7 @@ main {
       letter-spacing: 1em;
 
       span {
-        color: #4c1c46;
+        color: rgb(255, 69, 0);
       }
     }
 
@@ -123,13 +140,15 @@ main {
     }
   }
 
+  /*
   h2 {
     padding-top: 60px;
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  */
 }
 //end of main
 
