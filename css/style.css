@@ -31,11 +31,6 @@ nav .container {
   flex-direction: row-reverse;
   align-items: center;
 }
-nav .hamburger-checkbox:checked + .list {
-  display: flex;
-  margin-top: 50px;
-  align-items: flex-end;
-}
 nav .hamburger-label {
   width: 1.5rem;
   height: 1.5rem;
@@ -51,10 +46,18 @@ nav .hamburger-line {
   background-color: white;
   display: block;
 }
+nav .hamburger-checkbox {
+  display: none;
+}
+nav .hamburger-checkbox:checked + .list {
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-end;
+}
 nav .list {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 100px;
   list-style: none;
   display: none;
   flex-direction: column;
@@ -75,6 +78,10 @@ nav .list .link:hover {
 }
 
 /*end of header*/
+p {
+  color: #094c72;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -82,6 +89,7 @@ main {
   background-color: black;
   padding-top: 150px;
   display: flex;
+  justify-content: center;
 }
 
 /*footer section - layout done, design needs to be changed*/
@@ -107,8 +115,5 @@ footer a:visited, footer p:visited {
 }
 
 /*end of footer*/
-p {
-  color: #094c72;
-}
 
 /*# sourceMappingURL=style.css.map */

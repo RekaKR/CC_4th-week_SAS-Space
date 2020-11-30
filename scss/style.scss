@@ -12,7 +12,7 @@ nav {
   z-index: 1;
   color: modules.$text-color;
 
-  & .pic {
+  .pic {
     top: 0;
 
     img {
@@ -24,23 +24,14 @@ nav {
     }
   }
 
-  & .container {
+  .container {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
 
-  & .hamburger {
-    &-checkbox {
-  
-      &:checked + .list {
-        display: flex;
-        margin-top: 50px;
-        align-items: flex-end;
-      }
-    }
-  
+  .hamburger {
     &-label {
       width: 1.5rem;
       height: 1.5rem;
@@ -57,22 +48,31 @@ nav {
       background-color: modules.$text-color;
       display: block;
     }
-  }    
+  
+    &-checkbox {
+      display: none;
+  
+      &:checked + .list {
+        display: flex;
+        margin-top: 50px;
+        align-items: flex-end;
+      }
+    }
+  }
 
-
-  & .list {
+  .list {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 100px;
     list-style: none;
     display: none;
     flex-direction: column;
 
-    & .item {
+    .item {
       text-align: center;
     }
   
-    & .link {
+    .link {
       color: modules.$text-color;
       padding: 1rem;
       line-height: 1rem;
@@ -88,6 +88,9 @@ nav {
 }
 /*end of header*/
 
+p {
+  color: modules.$p-color;
+}
 
 main {
   width: 100%;
@@ -96,6 +99,7 @@ main {
   background-color: modules.$side-background-color;
   padding-top: 150px;
   display: flex;
+  justify-content: center;
 }
 
 
@@ -123,6 +127,3 @@ footer {
   }
 }
 /*end of footer*/
-p {
-color: #094c72;
-}
