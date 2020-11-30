@@ -33,7 +33,6 @@ nav {
 
   & .hamburger {
     &-checkbox {
-      display: none;
   
       &:checked + .list {
         display: flex;
@@ -124,3 +123,6 @@ footer {
   }
 }
 /*end of footer*/
+p {
+color: #094c72;
+}

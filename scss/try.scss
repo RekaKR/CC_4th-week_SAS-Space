@@ -1,4 +1,4 @@
-/*html,
+html,
 body { 
 	height: 100%;
 	width: 100%;
@@ -6,7 +6,7 @@ body {
 	padding: 0;
 }  
 body {
-	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#094c72+98,01293f+100 */
 	background: rgb(9,76,114);
 	background: -webkit-radial-gradient(bottom, ellipse cover,  rgb(9,76,114) 0%,rgb(1,41,63) 100%);
 	background: -webkit-radial-gradient(ellipse at bottom, rgb(9,76,114) 0%, rgb(1,41,63) 100%);
@@ -27,7 +27,6 @@ $bxshadow-large: box-shadow(300);
 $bxshadow-medium: box-shadow(500);
 $bxshadow-small: box-shadow(800);
 
-
 .stars.large {
 	height: 3px;
 	width: 3px;
@@ -35,7 +34,6 @@ $bxshadow-small: box-shadow(800);
 	box-shadow: $bxshadow-large;
 	animation: blink-large 7s infinite;
 }
-
 .stars.medium {
 	height: 2px;
 	width: 2px;
@@ -43,7 +41,6 @@ $bxshadow-small: box-shadow(800);
 	box-shadow: $bxshadow-medium;
 	animation: blink-medium 5s infinite;
 }
-
 .stars.small {
 	height: 1px;
 	width: 1px;
@@ -69,7 +66,6 @@ $bxshadow-small: box-shadow(800);
 		box-shadow: $bxshadow-large;
 	}
 }
-
 @keyframes blink-medium {
 	0% {
 		box-shadow: $bxshadow-medium;
@@ -87,7 +83,6 @@ $bxshadow-small: box-shadow(800);
 		box-shadow: $bxshadow-medium;
 	}
 }
-
 @keyframes blink-small {
 	0% {
 		box-shadow: $bxshadow-small;
@@ -104,4 +99,4 @@ $bxshadow-small: box-shadow(800);
 	100% {
 		box-shadow: $bxshadow-small;
 	}
-}*/
+}
