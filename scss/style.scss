@@ -10,7 +10,6 @@ nav {
   width: 100%;
   height: 90px;
   background-color: modules.$navbar-background-color;
-//  box-shadow: 0 0 0.7rem modules.$shadow;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -97,16 +96,21 @@ main {
   width: 100%;
   height: 100vh;
   color: modules.$text-color;
-  padding-top: 150px;
+  padding-top: 45px;
   display: flex;
+  align-items: center;
   justify-content: center;
 
-  h1 {
-    text-align: center;
-    margin: 10px 0 50px;
+  div {
+    max-width: 70%;
 
-    span {
-      color: red;
+    h1 {
+      text-align: center;
+      margin: 10px 0 50px;
+
+      span {
+        color: red;
+      }
     }
   }
 }
@@ -118,7 +122,6 @@ footer {
   height: 40px;
   background-color: modules.$footer-background-color;
   font-size: 16px;
-  box-shadow: 0 0 0.7rem modules.$shadow;
   position: relative;
   bottom: 0;
   display: flex;
