@@ -20,11 +20,11 @@ h2 {
 nav {
   width: 100%;
   height: 90px;
+  color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
   position: fixed;
   z-index: 1;
-  color: white;
+  display: flex;
 }
 nav .pic {
   top: 0;
@@ -42,35 +42,56 @@ nav .container {
   flex-direction: row-reverse;
   align-items: center;
 }
-nav .hamburger-label {
+nav .container .hamburger-label {
   width: 1.5rem;
   height: 1.5rem;
   padding: 0.75rem;
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
 }
-nav .hamburger-line {
+nav .container .hamburger-line {
   width: 1.5rem;
   height: 2px;
   background-color: white;
   display: block;
 }
-nav .hamburger-checkbox {
+nav .container .hamburger-checkbox {
   display: none;
+  /*
+        &:checked + span.hamburger-line {
+          transform: translateY(12px) rotate(135deg);
+        }
+  */
+  /*       
+        &:checked + nav {
+          width: 100%;
+          height: 90px;
+          background-color: modules.$navbar-background-color-hover;
+          z-index: 3;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 90px;
+            background-color: modules.$navbar-background-color-hover;
+            z-index: 3;
+          }
+        }
+  */
 }
-nav .hamburger-checkbox:checked + .list {
+nav .container .hamburger-checkbox:checked + .list {
   margin-top: 50%;
   display: flex;
 }
-nav .hamburger-checkbox:checked + .list::before {
+nav .container .hamburger-checkbox:checked + .list::before {
   content: "";
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  top: 11.7%;
+  top: 90px;
   left: 0;
 }
 nav .list {
@@ -84,7 +105,7 @@ nav .list {
 }
 nav .list .item {
   text-align: center;
-  z-index: 3;
+  z-index: 2;
 }
 nav .list .link {
   color: white;
@@ -141,17 +162,31 @@ footer {
   position: relative;
   bottom: 0;
   display: flex;
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
 }
-footer a, footer p {
-  margin: 0 8px;
-  color: white;
+footer p {
+  margin: auto 8px auto;
+  font-size: 14px;
+  display: inline-block;
+}
+footer a {
+  color: #bcbcbc;
+  margin: auto 5px auto 2px;
   text-decoration: none;
 }
-footer a:visited, footer p:visited {
+footer a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
+}
+footer a svg {
+  height: 14px;
+  fill: white;
+}
+footer a svg:hover {
+  fill: orangered;
 }
 
 /*# sourceMappingURL=style.css.map */
