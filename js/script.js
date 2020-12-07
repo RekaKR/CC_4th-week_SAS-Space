@@ -1,7 +1,11 @@
-let checked = document.getElementById("")
+let menu = document.querySelector(".hamburger-label");
+let topLine = document.getElementById("top-line");
+let middleLine = document.getElementById("middle-line");
+let bottomLine = document.getElementById("bottom-line");
+//  console.log(menu, topLine, middleLine, bottomLine)
 
-/*
-        &:checked ~ span.hamburger-line {
-          transform: translateY(12px) rotate(135deg);
-        }
-*/
+menu.onclick = function() {
+  topLine.classList.toggle("clicked-top-line");
+  middleLine.classList.toggle("clicked-middle-line");
+  bottomLine.classList.toggle("clicked-bottom-line");
+}

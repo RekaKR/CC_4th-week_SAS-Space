@@ -56,7 +56,7 @@ nav .container .hamburger-line {
   height: 2px;
   background-color: white;
   display: block;
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 nav .container .hamburger-checkbox {
   display: none;
@@ -176,6 +176,18 @@ footer a svg {
 }
 footer a svg:hover {
   fill: orangered;
+}
+
+.clicked-top-line {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.clicked-middle-line {
+  transform: scale(0);
+}
+
+.clicked-bottom-line {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /*# sourceMappingURL=style.css.map */

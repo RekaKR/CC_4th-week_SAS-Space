@@ -49,7 +49,7 @@ nav {
         height: 2px;
         background-color: modules.$text-color;
         display: block;
-        transition: 2s ease-in-out;
+        transition: 0.5s ease-in-out;
       }
       
       &-checkbox {
@@ -58,6 +58,7 @@ nav {
         &:checked + .list {
           margin-top: 50%;
           display: flex;
+//        transition: background-color 1s ease-out;
 
           &::before {
             content: "";
@@ -67,6 +68,7 @@ nav {
             position: fixed;
             top: 90.09999694px;
             left: 0;
+//            transition: background-color 1s ease-out;
           }
 
           &::after {
@@ -198,3 +200,16 @@ footer {
     }
 }
 //end of footer
+
+//js
+.clicked-top-line {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.clicked-middle-line {
+  transform: scale(0);
+}
+
+.clicked-bottom-line {
+  transform: translateY(-8px) rotate(-45deg);
+}
