@@ -58,7 +58,6 @@ nav {
         &:checked + .list {
           margin-top: 50%;
           display: flex;
-//        transition: background-color 1s ease-out;
 
           &::before {
             content: "";
@@ -68,7 +67,6 @@ nav {
             position: fixed;
             top: 90.09999694px;
             left: 0;
-//            transition: background-color 1s ease-out;
           }
 
           &::after {
